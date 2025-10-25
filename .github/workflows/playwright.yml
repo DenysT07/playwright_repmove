@@ -4,8 +4,12 @@ on:
     branches: [ master ]
 jobs:
   test:
-    timeout-minutes: 5
-    runs-on: windows-latest
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: ${{ secrets.BASE_URL }}
+      VALID_EMAIL: ${{ secrets.VALID_EMAIL }}
+      VALID_PASSWORD: ${{ secrets.VALID_PASSWORD }}
     steps:
     - uses: actions/checkout@v5
     - uses: actions/setup-node@v5

@@ -1,0 +1,22 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "i18n-iso-countries": "^1.7.0",
+    "phone-number-generator-js": "^1.2.16"
+  }
+}
